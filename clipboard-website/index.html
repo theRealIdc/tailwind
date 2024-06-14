@@ -16,10 +16,10 @@
         theme: {
           extend: {
             colors: {
-              strongCyan: "hs(171,66%,44%)",
-              lightBlue: "hs(233, 100%, 69%)",
-              darkGrayishBlue: "hs(210, 10%, 33%)",
-              grayishBlue: "hs(201, 11%, 66%)",
+              strongCyan: "hsl(171, 66%, 44%)",
+              lightBlue: "hsl(233, 100%, 69%)",
+              darkGrayishBlue: "hsl(210, 10%, 33%)",
+              grayishBlue: "hsl(201, 11%, 66%)",
             },
             fontFamily: {
               sans: ["Bai Jamjuree", "sans-serif"],
@@ -29,7 +29,36 @@
       };
     </script>
   </head>
-  <body>
-    <div class="font-sans">Simple app</div>
+  <body
+    class="bg-[url(images/bg-header-mobile.png)] bg-no-repeat bg-contain sm:bg-[url(images/bg-header-desktop.png)] bg-no-repeat bg-contain"
+  >
+    <!-- Hero section -->
+    <section id="hero">
+      <div class="max-w-6xl mx-auto text-center mb-40 px-10 pt-16">
+        <img src="images/logo.svg" alt="Clipboard" class="mx-auto my-16" />
+        <h3 class="text-4xl mb-8 font-bold text-darkGrayishBlue md:text-5xl">
+          A history of everything you copy
+        </h3>
+        <p class="max-w-3xl mx-auto mb-10 text-2xl text-grayishBlue">
+          Clipboard allows you to track and organize everything you copy.
+          Instantly access your clipboard on all your devices.
+        </p>
+        <!-- Button Container-->
+        <div
+          class="flex flex-col justify-center w-full space-y-6 text-xl text-white md:flex-row md:space-y-0 md:space-x-4"
+        >
+          <a
+            href="#"
+            class="bg-strongCyan p-4 px-8 rounded-full shadow-lg duration-200 hover:opacity-80"
+            >Download for IOS</a
+          >
+          <a
+            href="#"
+            class="bg-lightBlue p-4 px-8 rounded-full shadow-lg duration-200 hover:opacity-80"
+            >Download for ANDROID</a
+          >
+        </div>
+      </div>
+    </section>
   </body>
 </html>
