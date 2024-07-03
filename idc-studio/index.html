@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,6 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=Alata&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Document</title>
     <script>
       tailwind.config = {
@@ -40,12 +40,6 @@
             letterSpacing: {
               widest: "0.3em",
             },
-            translate: {
-              "7px": "7px",
-              "14px": "14px",
-              "6px": "6px",
-              "-6px": "-6px",
-            },
           },
         },
       };
@@ -54,9 +48,7 @@
 
   <body class="bg-black">
     <!---Hero Section-->
-    <section
-      class="bg-[url(images/desktop/image-hero.jpg)] bg-no-repeat bg-center sm:bg-[url(images/mobile/image-hero.jpg)] bg-cover"
-    >
+    <section id="hero">
       <!---Hero Container-->
       <div class="container mx-w-6xl mx-auto py-12 text-red-500 px-6">
         <!--Menu / logo container-->
@@ -97,22 +89,16 @@
             </div>
           </div>
           <!-- todo Hambuger Button-->
-          <!-- <div class="md:hidden">
+          <div class="md:hidden">
             <button
-              class="transform rotate-90 relative z-40 block cursor-pointer w-[24px] h-[24px] transition-all duration-250 md:hidden focus:outline-none"
+              class="open hamburger z-40 block md:hidden focus:outline-none"
               type="button"
             >
-              <span
-                class="translate-y-6px translate-x-6px transform rotate-45 absolute w-[24px] h-[2px] top-0 left-0 bg-white transition-all duration-500 transform rotate-0"
-              ></span>
-              <span
-                class="absolute rotate-(-45deg) translate-y-6px translate-x-(-6px) hidden w-[24px] h-[2px] top-0 left-0 bg-white transition-all duration-500 transform md:rotate-0 translate-y-7px"
-              ></span>
-              <span
-                class="absolute w-[24px] h-[2px] top-0 left-0 bg-white transition-all duration-500 transform rotate-0 translate-y-14px"
-              ></span>
+              <span class="hamburger-top"></span>
+              <span class="hamburger-middle"></span>
+              <span class="hamburger-bottom"></span>
             </button>
-          </div> -->
+          </div>
         </nav>
 
         <!--Todo - Mobile Menu-->
