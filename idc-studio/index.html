@@ -40,6 +40,12 @@
             letterSpacing: {
               widest: "0.3em",
             },
+            translate: {
+              "7px": "7px",
+              "14px": "14px",
+              "6px": "6px",
+              "-6px": "-6px",
+            },
           },
         },
       };
@@ -49,14 +55,14 @@
   <body class="bg-black">
     <!---Hero Section-->
     <section
-      class="bg-[url(images/desktop/image-hero.jpg)] bg-no-repeat bg-center sm:bg-[url(images/mobile/image-hero.jpg)] bg-no-repeat bg-cover"
+      class="bg-[url(images/desktop/image-hero.jpg)] bg-no-repeat bg-center sm:bg-[url(images/mobile/image-hero.jpg)] bg-cover"
     >
       <!---Hero Container-->
       <div class="container mx-w-6xl mx-auto py-12 text-red-500 px-6">
         <!--Menu / logo container-->
         <nav class="flex items-center justify-between font-bold text-white">
           <!--Logo-->
-          <div class="text-2xl">IDCStudio</div>
+          <div class="text-2xl font-bold">IDCStudio</div>
           <!--Menu-->
           <div class="hidden h-10 font-atala md:flex md:space-x-8">
             <div class="group">
@@ -91,6 +97,22 @@
             </div>
           </div>
           <!-- todo Hambuger Button-->
+          <!-- <div class="md:hidden">
+            <button
+              class="transform rotate-90 relative z-40 block cursor-pointer w-[24px] h-[24px] transition-all duration-250 md:hidden focus:outline-none"
+              type="button"
+            >
+              <span
+                class="translate-y-6px translate-x-6px transform rotate-45 absolute w-[24px] h-[2px] top-0 left-0 bg-white transition-all duration-500 transform rotate-0"
+              ></span>
+              <span
+                class="absolute rotate-(-45deg) translate-y-6px translate-x-(-6px) hidden w-[24px] h-[2px] top-0 left-0 bg-white transition-all duration-500 transform md:rotate-0 translate-y-7px"
+              ></span>
+              <span
+                class="absolute w-[24px] h-[2px] top-0 left-0 bg-white transition-all duration-500 transform rotate-0 translate-y-14px"
+              ></span>
+            </button>
+          </div> -->
         </nav>
 
         <!--Todo - Mobile Menu-->
@@ -380,8 +402,8 @@
             class="flex flex-col items-center space-y-8 md:items-start md:space-y-4"
           >
             <!-- Logo -->
-            <div class="h-8">
-              <img src="images/logo.svg" alt="" class="w-44 md:ml-3" />
+            <div class="h-8 ml-2">
+              <div class="text-4xl text-white font-bold">IDCStudio</div>
             </div>
             <!-- Menu Container -->
             <div
